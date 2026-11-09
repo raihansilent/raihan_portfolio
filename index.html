@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#030915" />
+  <title>Md Raihan Siddik | Neural Portfolio Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="shell">
+    <nav class="nav glass" aria-label="Primary navigation">
+      <a href="#home" class="brand" aria-label="MD RAIHAN SIDDIK home">
+        <span class="brand-mark"><i data-lucide="cpu" aria-hidden="true"></i></span>
+        <span><span class="brand-name">MD RAIHAN SIDDIK</span><span class="brand-role">EEE & Computational Engineer</span></span>
+      </a>
+      <div class="nav-links" id="primary-menu">
+        <a class="active" href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#languages">Languages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a class="icon-btn" href="https://github.com/raihansilent" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="src/images/github.svg" alt="" /></a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/md-raihan-siddiq-a398ba449?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="src/images/linkedin.svg" alt="" /></a>
+        <a class="green-btn nav-cv" href="raihan_cv/Raihan_Siddik_CV.pdf" download="Raihan_Siddik_CV.pdf" target="_blank" rel="noopener noreferrer"><i data-lucide="download" aria-hidden="true"></i><span>Download CV</span></a>
+        <button class="icon-btn mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+          <i data-lucide="menu" class="icon-menu" aria-hidden="true"></i>
+          <i data-lucide="x" class="icon-close" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="layout">
+      <aside class="sidebar glass" id="contact" data-reveal>
+        <div class="avatar-wrap"><div class="avatar" aria-label="MD RAIHAN SIDDIK profile photo"><img src="src/images/theam/IMG_20260125_154155.jpg.jpeg" alt="MD RAIHAN SIDDIK" /></div></div>
+        <div class="profile-head"><h1>MD RAIHAN SIDDIK</h1><p>Aspiring EEE & Computational Engineer</p><span class="status"><i></i> Available for opportunities</span></div>
+        <div class="side-divider"></div>
+        <div class="label">Social presence</div>
+        <div class="socials">
+          <a class="icon-btn" href="https://www.facebook.com/raihan.silent" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="src/images/facebook.svg" alt="Facebook" /></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/md-raihan-siddiq-a398ba449?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="src/images/linkedin.svg" alt="LinkedIn" /></a>
+          <a class="icon-btn" href="https://github.com/raihansilent" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="src/images/github.svg" alt="GitHub" /></a>
+          <a class="icon-btn" href="https://x.com/raihan_silent" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="src/images/twitter.svg" alt="X (Twitter)" /></a>
+          <a class="icon-btn" href="https://www.instagram.com/raihan.silent" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="src/images/instagram.svg" alt="Instagram" /></a>
+          <a class="icon-btn" href="https://wa.me/8801643963072" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img src="src/images/whatsapp.svg" alt="WhatsApp" /></a>
+          <a class="icon-btn" href="https://t.me/raihan_silent" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img src="src/images/telegram.svg" alt="Telegram" /></a>
+        </div>
+        <div class="side-divider"></div>
+        <div class="label">Contact & messaging</div>
+        <div class="contact-list">
+          <a class="contact" href="https://wa.me/8801643963072" target="_blank" rel="noopener noreferrer"><img src="src/images/whatsapp.svg" alt="WhatsApp" /><span>+880 1643-963072</span></a>
+          <a class="contact" href="https://t.me/raihan_silent" target="_blank" rel="noopener noreferrer"><img src="src/images/telegram.svg" alt="Telegram" /><span>@raihan_silent</span></a>
+          <a class="contact" href="mailto:raihan.silent@gmail.com"><i data-lucide="mail"></i><span>raihan.silent@gmail.com</span></a>
+          <a class="contact" href="tel:+8801643963072"><i data-lucide="phone"></i><span>+880 1643-963072</span></a>
+          <div class="contact"><i data-lucide="map-pin"></i><span>Uttara Sector 11, Dhaka, Bangladesh</span></div>
+        </div>
+        <a class="green-btn side-cv" href="raihan_cv/Raihan_Siddik_CV.pdf" download="Raihan_Siddik_CV.pdf" target="_blank" rel="noopener noreferrer"><i data-lucide="file-down" aria-hidden="true"></i> Download CV</a>
+      </aside>
+
+      <main class="main">
+        <section class="hero glass" id="home" data-reveal>
+          <div class="eyebrow mono">Integrated neural interface / portfolio</div>
+          <h2>Building thoughtful work at the edge of <span>people & technology.</span></h2>
+          <p>An interactive engineering portfolio dashboard with a living neural canvas, computational identity, and a light frosted glass interface designed for seamless exploration.</p>
+          <div class="hero-meta"><span class="chip"><i data-lucide="scan-line"></i> System online</span><span class="chip"><i data-lucide="sparkles"></i> Minimal / futuristic</span><span class="chip"><i data-lucide="layers-3"></i> Interactive showcase</span></div>
+        </section>
+
+        <!-- Projects & Professional Presence Section -->
+        <section class="section-card glass" id="projects" data-reveal>
+          <div class="section-head">
+            <div class="section-title">
+              <span class="section-icon"><i data-lucide="layers-3"></i></span>
+              <div>
+                <div class="section-kicker">Professional profiles</div>
+                <h3>Projects & Presence</h3>
+              </div>
+            </div>
+            <p>Verified developer profiles, active repositories, and career credentials across platforms.</p>
+          </div>
+          <div class="profile-grid">
+            <a class="profile-card glass-soft" href="https://www.linkedin.com/in/md-raihan-siddiq-a398ba449?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="--accent:#73a7ff"><div class="profile-top"><span class="platform-icon"><img src="src/images/linkedin.svg" alt="LinkedIn" /></span><i data-lucide="arrow-up-right"></i></div><h4>LinkedIn</h4><p>Professional networking and career profile.</p><span class="handle mono">md-raihan-siddiq</span></a>
+            <a class="profile-card glass-soft" href="https://github.com/raihansilent" target="_blank" rel="noopener noreferrer" style="--accent:#dbeaff"><div class="profile-top"><span class="platform-icon"><img src="src/images/github.svg" alt="GitHub" /></span><i data-lucide="arrow-up-right"></i></div><h4>GitHub</h4><p>Coding portfolio, projects, and technical work.</p><span class="handle mono">@raihansilent</span></a>
+            <a class="profile-card glass-soft" href="#" style="--accent:#67e8d0"><div class="profile-top"><span class="platform-icon"><i data-lucide="briefcase-business"></i></span><i data-lucide="arrow-up-right"></i></div><h4>BDJobs</h4><p>Professional profile and career opportunities.</p><span class="handle mono">profile / placeholder</span></a>
+            <a class="profile-card glass-soft" href="https://stackoverflow.com/users/33288977/md-raihan-siddiq" target="_blank" rel="noopener noreferrer" style="--accent:#ff9c73"><div class="profile-top"><span class="platform-icon"><img src="src/images/stackoverflow.svg" alt="Stack Overflow" /></span><i data-lucide="arrow-up-right"></i></div><h4>Stack Overflow</h4><p>Technical knowledge and problem solving.</p><span class="handle mono">md-raihan-siddiq</span></a>
+            <a class="profile-card glass-soft" href="https://www.researchgate.net/" target="_blank" rel="noopener noreferrer" style="--accent:#b477ff"><div class="profile-top"><span class="platform-icon"><img src="src/images/researchgate.svg" alt="ResearchGate" /></span><i data-lucide="arrow-up-right"></i></div><h4>ResearchGate</h4><p>Academic and research profile placeholder.</p><span class="handle mono">researchgate.net</span></a>
+          </div>
+          <div class="cv-panel glass-soft">
+            <div class="cv-info">
+              <span class="cv-icon"><i data-lucide="file-text"></i></span>
+              <div>
+                <strong>My Curriculum Vitae (CV)</strong>
+                <span>Official curriculum vitae of MD RAIHAN SIDDIK in PDF format.</span>
+              </div>
+            </div>
+            <div class="cv-actions">
+              <a class="outline-btn" href="raihan_cv/Raihan_Siddik_CV.pdf" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" aria-hidden="true"></i> View CV</a>
+              <a class="green-btn" href="raihan_cv/Raihan_Siddik_CV.pdf" download="Raihan_Siddik_CV.pdf" target="_blank" rel="noopener noreferrer"><i data-lucide="download" aria-hidden="true"></i> Download</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section-card glass" id="about" data-reveal>
+          <div class="section-head"><div class="section-title"><span class="section-icon"><i data-lucide="user-round"></i></span><div><div class="section-kicker">Profile overview</div><h3>About Me</h3></div></div></div>
+          <div class="about-grid">
+            <p class="about-copy">Hello, I'm <strong>MD RAIHAN SIDDIK</strong>, an undergraduate student of Electrical and Electronic Engineering at <strong>Northern University Bangladesh</strong>. I am building a strong foundation in electrical systems, electronics, circuit analysis, and emerging technologies. With an analytical mindset and a commitment to continuous learning, I aim to develop reliable technical solutions and grow as a professional engineer.</p>
+            <div class="info-grid">
+              <div class="info-card glass-soft" style="--accent:#6fe7ff"><i data-lucide="zap"></i><small>Specialization</small><b>Electrical & Electronic Eng.</b></div>
+              <div class="info-card glass-soft" style="--accent:#67e8d0"><i data-lucide="cpu"></i><small>Core Focus</small><b>Circuits & Embedded Systems</b></div>
+              <div class="info-card glass-soft" style="--accent:#b477ff"><i data-lucide="binary"></i><small>Computational Interest</small><b>AI & Mathematical Modeling</b></div>
+              <div class="info-card glass-soft" style="--accent:#9cf3c6"><i data-lucide="graduation-cap"></i><small>Institution</small><b>Northern University Bangladesh</b></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills & Expertise Section -->
+        <section class="section-card glass" id="skills" data-reveal>
+          <div class="section-head">
+            <div class="section-title">
+              <span class="section-icon"><i data-lucide="cpu"></i></span>
+              <div>
+                <div class="section-kicker">Core Competencies</div>
+                <h3>Skills & Expertise</h3>
+              </div>
+            </div>
+            <p>Consolidated technical competencies across hardware, software & computation.</p>
+          </div>
+          <div class="skills-grid">
+            <!-- 1. Engineering Software & Simulation -->
+            <article class="skills-card" style="--accent:#6fe7ff">
+              <div class="skills-card-header">
+                <div class="skills-card-title-group">
+                  <span class="skills-cat-icon"><i data-lucide="code-xml"></i></span>
+                  <h4>Engineering Software & Simulation</h4>
+                </div>
+                <span class="skills-badge">EEE & CAD</span>
+              </div>
+              <div class="skills-pills-wrap">
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> AutoCAD (Electrical Drafting & CAD)</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> PSpice (Circuit Design & Simulation)</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Hardware Simulation & Testing</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Reverse Engineering</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Signals Analysis</span>
+              </div>
+            </article>
+
+            <!-- 2. Embedded Systems & Hardware -->
+            <article class="skills-card" style="--accent:#ffb75e">
+              <div class="skills-card-header">
+                <div class="skills-card-title-group">
+                  <span class="skills-cat-icon"><i data-lucide="cpu"></i></span>
+                  <h4>Embedded Systems & Hardware</h4>
+                </div>
+                <span class="skills-badge">HARDWARE</span>
+              </div>
+              <div class="skills-pills-wrap">
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Digital Logic Design</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Arduino Prototyping & Sensor Integration</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Hardware Interfacing</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Basic Memory Architecture & Interrupts</span>
+              </div>
+            </article>
+
+            <!-- 3. Programming Languages & Computation -->
+            <article class="skills-card" style="--accent:#b477ff">
+              <div class="skills-card-header">
+                <div class="skills-card-title-group">
+                  <span class="skills-cat-icon"><i data-lucide="terminal"></i></span>
+                  <h4>Programming Languages & Computation</h4>
+                </div>
+                <span class="skills-badge">COMPUTATION</span>
+              </div>
+              <div class="skills-pills-wrap">
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> MATLAB (Highly Proficient / Advanced)</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Python (Applied / Intermediate)</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> C Programming</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Algorithm Design & Mathematical Modeling</span>
+              </div>
+            </article>
+
+            <!-- 4. Advanced AI & Digital Technologies -->
+            <article class="skills-card" style="--accent:#56e6a1">
+              <div class="skills-card-header">
+                <div class="skills-card-title-group">
+                  <span class="skills-cat-icon"><i data-lucide="sparkles"></i></span>
+                  <h4>Advanced AI & Digital Technologies</h4>
+                </div>
+                <span class="skills-badge">AI & DATA</span>
+              </div>
+              <div class="skills-pills-wrap">
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Machine Learning Fundamentals</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Generative AI & Prompt Engineering</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> AI-Powered Automation & Data Analysis</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Cloud Computing</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Basic IT Networking Concepts</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Digital Communication Basics</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Tech-Tool Adaptability</span>
+              </div>
+            </article>
+
+            <!-- 5. Professional, Research & Workplace Skills -->
+            <article class="skills-card full-width" style="--accent:#ff7e9e">
+              <div class="skills-card-header">
+                <div class="skills-card-title-group">
+                  <span class="skills-cat-icon"><i data-lucide="briefcase"></i></span>
+                  <h4>Professional, Research & Workplace Competencies</h4>
+                </div>
+                <span class="skills-badge">PROFESSIONAL & ANALYTICAL</span>
+              </div>
+              <div class="skills-pills-wrap">
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Problem Solving & Analytical Thinking</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Critical Thinking & Attention to Detail</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Academic & Technical Research</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Research & Information Gathering</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Quick Learning</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Ability to Work Under Pressure</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Communication</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Teamwork & Collaboration</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Time Management</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Adaptability</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Microsoft Word</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Microsoft Excel</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> PowerPoint</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Google Workspace (Sheets, Forms)</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Data Entry</span>
+                <span class="skill-pill"><i data-lucide="check-circle-2"></i> Documentation & Reporting</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Academic Background / Education Section -->
+        <section class="section-card glass" id="education" data-reveal>
+          <div class="section-head">
+            <div class="section-title">
+              <span class="section-icon" style="color:#b477ff"><i data-lucide="graduation-cap"></i></span>
+              <div>
+                <div class="section-kicker">Academic Background</div>
+                <h3>Education</h3>
+              </div>
+            </div>
+            <p>Formal academic education and engineering qualifications.</p>
+          </div>
+
+          <div class="education-table">
+            <div class="edu-table-head">
+              <div>Qualification / Degree</div>
+              <div>Department / Group</div>
+              <div>Academic Session / Status</div>
+              <div>Location</div>
+            </div>
+
+            <!-- BSc in Engineering -->
+            <div class="edu-row glass-soft" style="--accent:#6fe7ff">
+              <div class="edu-degree-col">
+                <span class="edu-badge-icon"><i data-lucide="graduation-cap"></i></span>
+                <div class="edu-title-wrap">
+                  <strong>B.Sc. in Engineering</strong>
+                  <a href="https://www.nub.ac.bd/" target="_blank" rel="noopener noreferrer" class="edu-inst-link">
+                    Northern University Bangladesh <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="edu-group-col">
+                <span class="edu-label">Department / Group</span>
+                <span>Electrical and Electronic Engineering (EEE)</span>
+              </div>
+              <div class="edu-session-col">
+                <span class="edu-label">Academic Session / Status</span>
+                <span class="edu-session-badge ongoing"><i data-lucide="clock"></i> Undergraduate (Ongoing)</span>
+              </div>
+              <div class="edu-location-col">
+                <span class="edu-label">Location</span>
+                <span class="edu-location-value"><i data-lucide="map-pin"></i><span>Dhaka, Bangladesh</span></span>
+              </div>
+            </div>
+
+            <!-- HSC -->
+            <div class="edu-row glass-soft" style="--accent:#67e8d0">
+              <div class="edu-degree-col">
+                <span class="edu-badge-icon"><i data-lucide="book-marked"></i></span>
+                <div class="edu-title-wrap">
+                  <strong>Higher Secondary Certificate (HSC)</strong>
+                </div>
+              </div>
+              <div class="edu-group-col">
+                <span class="edu-label">Department / Group</span>
+                <span>Science</span>
+              </div>
+              <div class="edu-session-col">
+                <span class="edu-label">Academic Session / Status</span>
+                <span class="edu-session-badge completed"><i data-lucide="check-circle-2"></i> Session: 2022 – 2023</span>
+              </div>
+              <div class="edu-location-col">
+                <span class="edu-label">Location</span>
+                <span class="edu-location-value"><i data-lucide="map-pin"></i><span>Jamalpur, Mymensingh</span></span>
+              </div>
+            </div>
+
+            <!-- SSC -->
+            <div class="edu-row glass-soft" style="--accent:#b477ff">
+              <div class="edu-degree-col">
+                <span class="edu-badge-icon"><i data-lucide="school"></i></span>
+                <div class="edu-title-wrap">
+                  <strong>Secondary School Certificate (SSC)</strong>
+                </div>
+              </div>
+              <div class="edu-group-col">
+                <span class="edu-label">Department / Group</span>
+                <span>Science</span>
+              </div>
+              <div class="edu-session-col">
+                <span class="edu-label">Academic Session / Status</span>
+                <span class="edu-session-badge completed"><i data-lucide="check-circle-2"></i> Session: 2020 – 2021</span>
+              </div>
+              <div class="edu-location-col">
+                <span class="edu-label">Location</span>
+                <span class="edu-location-value"><i data-lucide="map-pin"></i><span>Jamalpur, Mymensingh</span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Language Proficiency Section -->
+        <section class="section-card glass" id="languages" data-reveal>
+          <div class="section-head">
+            <div class="section-title">
+              <span class="section-icon" style="color:#27d69a"><i data-lucide="languages"></i></span>
+              <div>
+                <div class="section-kicker">Communication</div>
+                <h3>Language Proficiency</h3>
+              </div>
+            </div>
+            <p>Speaking, writing, and listening at a glance.</p>
+          </div>
+
+          <!-- Language Proficiency Cards Grid -->
+          <div class="lang-grid">
+            <!-- Bangla -->
+            <div class="lang-card glass-soft" style="--accent:#22c9f3">
+              <div class="lang-card-header">
+                <div class="lang-title-group">
+                  <span class="lang-flag-badge">🇧🇩</span>
+                  <div>
+                    <h4>Bangla</h4>
+                    <span class="lang-native-text">বাংলা · First Language</span>
+                  </div>
+                </div>
+                <span class="lang-level-badge">Native</span>
+              </div>
+              <div class="lang-metrics">
+                <div class="metric-row">
+                  <div class="metric-info">
+                    <span><i data-lucide="mic"></i> Speaking</span>
+                    <b>100%</b>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="metric-row">
+                  <div class="metric-info">
+                    <span><i data-lucide="pen-line"></i> Writing</span>
+                    <b>100%</b>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="metric-row">
+                  <div class="metric-info">
+                    <span><i data-lucide="headphones"></i> Listening</span>
+                    <b>100%</b>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- English -->
+            <div class="lang-card glass-soft" style="--accent:#67e8d0">
+              <div class="lang-card-header">
+                <div class="lang-title-group">
+                  <span class="lang-flag-badge">🇺🇸</span>
+                  <div>
+                    <h4>English</h4>
+                    <span class="lang-native-text">Professional & Technical</span>
+                  </div>
+                </div>
+                <span class="lang-level-badge">Professional</span>
+              </div>
+              <div class="lang-metrics">
+                <div class="metric-row">
+                  <div class="metric-info">
+                    <span><i data-lucide="mic"></i> Speaking</span>
+                    <b>85%</b>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="metric-row">
+                  <div class="metric-info">
+                    <span><i data-lucide="pen-line"></i> Writing</span>
+                    <b>90%</b>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="metric-row">
+                  <div class="metric-info">
+                    <span><i data-lucide="headphones"></i> Listening</span>
+                    <b>95%</b>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hindi -->
+            <div class="lang-card glass-soft" style="--accent:#ffb75e">
+              <div class="lang-card-header">
+                <div class="lang-title-group">
+                  <span class="lang-flag-badge">🇮🇳</span>
+                  <div>
+                    <h4>Hindi</h4>
+                    <span class="lang-native-text">हिंदी · Oral & Conversational</span>
+                  </div>
+                </div>
+                <span class="lang-level-badge">Conversational</span>
+              </div>
+              <div class="lang-metrics">
+                <div class="metric-row">
+                  <div class="metric-info">
+                    <span><i data-lucide="mic"></i> Speaking</span>
+                    <b>75%</b>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="metric-row">
+                  <div class="metric-info">
+                    <span><i data-lucide="headphones"></i> Listening</span>
+                    <b>80%</b>
+                  </div>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Visual Works & Engineering Gallery (3D Cylinder Coverflow Deck) at the bottom -->
+        <section class="section-card glass" id="gallery" data-reveal>
+          <div class="section-head">
+            <div class="section-title">
+              <span class="section-icon" style="color:#6fe7ff"><i data-lucide="sparkles"></i></span>
+              <div>
+                <div class="section-kicker">Interactive Showcase</div>
+                <h3>Visual Works & Engineering Gallery</h3>
+              </div>
+            </div>
+            <p>3D Cylinder Coverflow perspective with depth layering & holographic gyro tilt. Drag, scroll or use controls.</p>
+          </div>
+
+          <!-- 3D Cylinder Coverflow Carousel with FB_IMG_1794075079623.jpg centered in focus -->
+          <div class="ab-carousel-container" id="ab-carousel-container">
+            <div class="ab-carousel-viewport" id="ab-viewport">
+              <div class="ab-carousel-track" id="ab-track">
+                <!-- Slide 0 -->
+                <div class="ab-card" data-index="0" data-title="Computational Logic & Architecture" data-tag="Microprocessors">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/1792042237U.jpg" alt="Computational Engineering & Systems" loading="lazy" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Computation</span>
+                      <h4>Computational Logic & Architecture</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="ab-card" data-index="1" data-title="Electronic Devices & Modern Tech" data-tag="Electronics">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/Role-of-Electronic-Devices-Circuits-in-Modern-Technology.webp" alt="Electronic Devices & Modern Circuits" loading="lazy" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Electronics</span>
+                      <h4>Electronic Devices & Modern Tech</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="ab-card" data-index="2" data-title="Transmission & Grid Infrastructure" data-tag="Power Grid">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/photo-1473341304170-971dccb5ac1e.avif" alt="Electrical Grid & Power Infrastructure" loading="lazy" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Power Grid</span>
+                      <h4>Transmission & Grid Infrastructure</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3: PRIMARY INITIAL FOCUS (=FB_IMG_1794075079623.jpg) -->
+                <div class="ab-card active" data-index="3" data-featured="true" data-title="Neural Microprocessor Architecture" data-tag="Featured Focus">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/FB_IMG_1794075079623.jpg" alt="Neural Microprocessor Architecture" loading="eager" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Featured Focus</span>
+                      <h4>Neural Microprocessor Architecture</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="ab-card" data-index="4" data-title="Circuit Analysis & Diagnostics" data-tag="Testing">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/1792439960447.jpg" alt="Circuit Testing & Diagnostics" loading="lazy" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Testing</span>
+                      <h4>Circuit Analysis & Diagnostics</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="ab-card" data-index="5" data-title="Sensor & Controller Prototyping" data-tag="Embedded Systems">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/images%20(1).jpg" alt="Microcontroller Prototyping" loading="lazy" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Embedded</span>
+                      <h4>Sensor & Controller Prototyping</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="ab-card" data-index="6" data-title="Automation & Robotics Flow" data-tag="Automation">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/images%20(2).jpg" alt="Robotics & Sensor Integration" loading="lazy" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Automation</span>
+                      <h4>Automation & Robotics Flow</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="ab-card" data-index="7" data-title="Signal Dynamics & Waveforms" data-tag="Signals">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/images%20(3).jpg" alt="Hardware Signal Processing" loading="lazy" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Signals</span>
+                      <h4>Signal Dynamics & Waveforms</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="ab-card" data-index="8" data-title="Circuit Blueprint & Engineering" data-tag="Hardware Automation">
+                  <div class="ab-card-inner glass-soft">
+                    <button class="ab-expand-btn" type="button" aria-label="Expand work"><i data-lucide="maximize-2"></i></button>
+                    <div class="ab-card-img-wrap">
+                      <img src="src/images/theam/images.jpg" alt="Circuit Blueprint & Engineering" loading="lazy" />
+                    </div>
+                    <div class="ab-card-meta">
+                      <span class="ab-badge">Hardware</span>
+                      <h4>Circuit Blueprint & Engineering</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="ab-controls">
+              <button class="ab-nav-btn prev" id="ab-prev" type="button" aria-label="Previous work"><i data-lucide="chevron-left"></i></button>
+              
+              <div class="ab-info-display">
+                <div class="ab-counter mono" id="ab-counter">04 / 09</div>
+                <div class="ab-title-info">
+                  <strong id="ab-active-title">Neural Microprocessor Architecture</strong>
+                  <span id="ab-active-tag">Featured Focus</span>
+                </div>
+              </div>
+
+              <div class="ab-drag-hint mono">
+                <i data-lucide="move-horizontal"></i> <span>Drag, scroll or hover</span>
+              </div>
+
+              <button class="ab-nav-btn next" id="ab-next" type="button" aria-label="Next work"><i data-lucide="chevron-right"></i></button>
+            </div>
+
+            <!-- Dynamic Pagination Dots -->
+            <div class="ab-pagination" id="ab-pagination"></div>
+          </div>
+        </section>
+
+        <footer class="footer-note mono">
+          <div>© 2026, MD RAIHAN SIDDIK</div>
+          <div>All rights reserved</div>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal for High-Res Engineering Works -->
+  <div class="gallery-modal" id="gallery-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content glass">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close preview"><i data-lucide="x"></i></button>
+      <div class="modal-img-wrap">
+        <img id="modal-img" alt="Enlarged gallery work" />
+      </div>
+      <div class="modal-meta">
+        <span class="modal-badge mono" id="modal-tag">Featured Work</span>
+        <h3 id="modal-title">Work Title</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="legacy" style="display:none" aria-hidden="true"><span id="fps-counter">60</span><span id="active-traces">0</span><input id="speed-slider" value="1"><span id="speed-val">1.0x</span><input id="code-speed-slider" value="1"><span id="code-speed-val">1.0x</span><input id="glow-slider" value=".75"><span id="glow-val">0.75</span><input id="stream-toggle" type="checkbox" checked><button id="btn-reset"></button><button id="btn-toggle-ui"></button><div id="control-panel"></div></div>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
